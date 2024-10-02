@@ -21,6 +21,28 @@ function LoginContainerBox({ onSwitch, onLogin }) {
 
     return (
         <Container maxWidth="sm">
+            <Container
+        style={{
+          display: 'flex',
+          flexDirection: 'row',        // Align items in a row
+          justifyContent: 'space-between', // Space between logo and title
+          alignItems: 'center',        // Vertically align items in the center
+          backgroundColor: 'white',
+          padding: '1rem',
+          borderRadius: '8px',
+          opacity: '.8',
+          marginBottom: '2rem',
+        }}
+      >
+        <img
+          src="src\images\nitk_logo.png" // Replace with your logo path
+          alt="NITK Logo"
+          style={{ width: '80px', marginBottom: '1rem' , marginTop: '1rem'}}
+        />
+        <Typography variant="h3" sx={{ fontSize: '30px', fontFamily: 'Arial, sans-serif', color: '#555' }}>
+          Major Project Allotment Software
+        </Typography>
+      </Container>
             <Typography
                 component="div"
                 style={{
@@ -34,7 +56,7 @@ function LoginContainerBox({ onSwitch, onLogin }) {
                     opacity: '.7',
                 }}
             >
-                <h1 style={{ fontFamily: 'Arial, sans-serif', color: '#333' , fontSize : '3rem'}}>Login</h1>
+                <h1 style={{ fontFamily: 'Arial, sans-serif', color: '#333' , fontSize : '3rem', marginTop: '1.5rem'}}>Login</h1>
                 <div
                     style={{
                         display: 'flex',
